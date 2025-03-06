@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///home/madhan/Projects/portfolio/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./Your Portfolio_files/styles.css">
+    <link rel="stylesheet" href="./Your Portfolio_files/all.min.css">
+    <link href="./Your Portfolio_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Add this right after the opening body tag -->
+    <div id="scene" class="parallax-background">
+        <div class="layer" data-depth="0.1">
+            <div class="shape shape-1"></div>
+        </div>
+        <div class="layer" data-depth="0.2">
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="layer" data-depth="0.3">
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="layer" data-depth="0.1">
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="layer" data-depth="0.2">
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header id="home">
+        <nav>
+            <div class="logo">Portfolio</div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="file:///home/madhan/Projects/portfolio/index.html#home">Home</a></li>
+                <li><a href="file:///home/madhan/Projects/portfolio/index.html#about">About</a></li>
+                <li><a href="file:///home/madhan/Projects/portfolio/index.html#skills">Skills</a></li>
+                <li><a href="file:///home/madhan/Projects/portfolio/index.html#projects">Projects</a></li>
+                <li><a href="file:///home/madhan/Projects/portfolio/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+    <div class="hero-content">
+        <div class="animated-text-container">
+            <h1>Hello, I'm <span class="highlight">Madhan</span></h1><p class="tagline">Web Developer &amp; Designer</p>
+        </div>
+        <div class="animated-shapes">
+            <div class="shape-container">
+                <div class="animated-shape shape-1"></div>
+                <div class="animated-shape shape-2"></div>
+                <div class="animated-shape shape-3"></div>
+            </div>
+        </div>
+        <div class="cta-buttons">
+            <a href="file:///home/madhan/Projects/portfolio/index.html#projects" class="btn primary-btn">View My Work</a>
+            <a href="file:///home/madhan/Projects/portfolio/index.html#contact" class="btn secondary-btn">Contact Me</a>
+        </div>
+        <div class="social-icons">
+            <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+    </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function revealOnScroll() {
+          let elements = document.querySelectorAll(".about-section, .about-image img, .about-text, .about-text p");
+          elements.forEach(el => {
+            let position = el.getBoundingClientRect().top;
+            let windowHeight = window.innerHeight;
+            if (position < windowHeight - 100) {
+              el.classList.add("reveal");
+            }
+          });
+        }
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll(); // Run on page load
+      });
+    </script>
+    
+
+    <!-- About Section -->
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-05%20at%2003.22.55-WdtHjPMHhvfYFEjE2mkXpgC3D5LNPW.jpeg" alt="About Me">
+            </div>
+            <div class="about-text">
+                <h3>Who am I?</h3>
+                <p>As a Computer Science student at VIT University, I am passionate about data science and machine learning. I love exploring algorithms, analyzing data, and building intelligent models to solve real-world problems.</p>
+                <p>Driven by curiosity, I continuously enhance my skills in Python, deep learning, and statistical analysis. My goal is to create AI-powered solutions that make a real-world impact.</p>
+                <div class="personal-info">
+                    <div class="info-item">
+                        <span class="info-title">Name:</span>
+                        <span class="info-value">Madhan Karthikeyan</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Email:</span>
+                        <span class="info-value"><a href="mailto:madhankrthik@gmail.com">madhankrthik@gmail.com</a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Location:</span>
+                        <span class="info-value">Chennai, India</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Availability:</span>
+                        <span class="info-value">Available for internships</span>
+                    </div>
+                </div>
+                <a href="https://drive.google.com/file/d/1INAtUDh_NLWcSANxcdiDdStSxbjybZur/view?usp=sharing" class="btn primary-btn">Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML5</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                            </div>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <h4>CSS3</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <h4>React</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <h4>Node.js</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>MongoDB</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <h4>Express.js</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>SQL</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 65%"></div>
+                            </div>
+                            <span class="skill-percentage">65%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools &amp; Others</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <h4>Figma</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                            <h4>Machine Learning</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <h4>Deep Learning</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-search"></i></div>
+                            <h4>Data Visualization</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <!-- Replace the projects-grid div with this enhanced version -->
+            <div class="projects-container">
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web">
+                        <div class="project-img">
+                            <img src="file:///placeholder.svg?height=600&amp;width=800" alt="E-commerce Website">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="file:///home/madhan/Projects/portfolio/index.html#" class="btn small-btn" target="_blank">Live Demo</a>
+                                    <a href="file:///home/madhan/Projects/portfolio/index.html#" class="btn small-btn secondary-btn" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Website</h3>
+                            <p>A fully responsive e-commerce platform with product filtering, cart functionality, and payment integration.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="app">
+                        <div class="project-img">
+                            <img src="file:///placeholder.svg?height=600&amp;width=800" alt="Task Management App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="file:///home/madhan/Projects/portfolio/index.html#" class="btn small-btn" target="_blank">Live Demo</a>
+                                    <a href="file:///home/madhan/Projects/portfolio/index.html#" class="btn small-btn secondary-btn" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>A productivity application for managing tasks, setting deadlines, and tracking progress with data visualization.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Express</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="design">
+                        <div class="project-img">
+                            <img src="file:///placeholder.svg?height=600&amp;width=800" alt="Portfolio Design">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="file:///home/madhan/Projects/portfolio/index.html#" class="btn small-btn" target="_blank">Live Demo</a>
+                                    <a href="file:///home/madhan/Projects/portfolio/index.html#" class="btn small-btn secondary-btn" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Design</h3>
+                            <p>A modern portfolio design with smooth animations, responsive layout, and theme toggle functionality.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="web">
+                        <div class="project-img">
+                            <img src="file:///placeholder.svg?height=600&amp;width=800" alt="Weather Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="file:///home/madhan/Projects/portfolio/index.html#" class="btn small-btn" target="_blank">Live Demo</a>
+                                    <a href="file:///home/madhan/Projects/portfolio/index.html#" class="btn small-btn secondary-btn" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Weather Dashboard</h3>
+                            <p>A weather application that provides real-time weather data, forecasts, and location-based information.</p>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>API</span>
+                                <span>CSS</span>
+                                <span>HTML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to me for any inquiries or collaboration opportunities. I'm always open to discussing new projects and ideas.</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Chennai, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>madhankrthik@gmail.com</p></div></div><div class="info-item">
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 93619 51624</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required="">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required=""></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Your Name</h3>
+                    <p>Web Developer &amp; Designer</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="file:///home/madhan/Projects/portfolio/index.html#home">Home</a></li>
+                        <li><a href="file:///home/madhan/Projects/portfolio/index.html#about">About</a></li>
+                        <li><a href="file:///home/madhan/Projects/portfolio/index.html#skills">Skills</a></li>
+                        <li><a href="file:///home/madhan/Projects/portfolio/index.html#projects">Projects</a></li>
+                        <li><a href="file:///home/madhan/Projects/portfolio/index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="file:///home/madhan/Projects/portfolio/index.html#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Madhan Karthikeyan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Your Portfolio_files/script.js"></script>
+    <!-- Add parallax.js library before the closing body tag -->
+    <script src="./Your Portfolio_files/parallax.min.js"></script>
+    <!-- Move the theme toggle to bottom right by replacing the existing theme-toggle div -->
+    <!-- <button class="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon" aria-hidden="true"></i>
+      <i class="fas fa-sun" aria-hidden="true"></i>
+      <span class="sr-only">Toggle theme</span>
+  </button> -->
+
+
+
+</body></html>
