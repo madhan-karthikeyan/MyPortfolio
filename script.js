@@ -428,4 +428,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   createParticles()
 })
-
